@@ -1,0 +1,25 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+#zapdos {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+body {
+  font-size: 2.5rem;
+  font-family: Helvetica;
+  background-image: url('./public/img/pk_bg.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+p {
+  margin-left: 10px;
+}
