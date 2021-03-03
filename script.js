@@ -77,7 +77,7 @@ function updateCaterpies() {
 
 function randomCaterpie() {
   let img = document.createElement('img')
-  img.src = 'http://static.pokemonpets.com/images/monsters-images-800-800/2010-Shiny-Caterpie.png'
+  img.src = './public/img/caterpie.png'
   img.width = 50
   img.style.setProperty('position', 'absolute')
   let x = Math.floor(Math.random() * window.innerWidth) - (img.width * 2)
