@@ -51,7 +51,7 @@ function checkHitCaterpie() {
 function drawThunder(x, y) {
   let img = document.createElement('img')
   img.src = 'https://pngimg.com/uploads/thunder/thunder_PNG64.png'
-  img.width = 300
+  img.width = zapdos.width
   img.style.setProperty('z-index', -1)
   img.style.setProperty('position', 'absolute')
   img.style.setProperty('left', x)
