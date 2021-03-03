@@ -94,7 +94,8 @@ function randomCaterpie() {
 function start() {
   pScore.innerText = score
   nCaterpies.innerText = caterpies.length
-  
+  zapdos.src = 'http://assets.stickpng.com/images/580b57fcd9996e24bc43c32d.png'
+  zapdos.width = 200
   let interval = setInterval(randomCaterpie, 1500)
 }
 
