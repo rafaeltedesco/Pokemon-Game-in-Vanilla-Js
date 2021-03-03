@@ -5,6 +5,12 @@ let zapdos = document.querySelector('#zapdos')
 document.addEventListener('mousemove', mouse)
 let thunders = []
 let caterpies = []
+let caterpieImg = new Image(width=50)
+caterpieImg = './public/img/caterpie.png'
+let thunderImg = new Image(width=zapdos.width)
+thunderImg.src = './public/img/thunder.png'
+console.log(thunderImg.src)
+
 
 function mouse(ev) {
   zapdos.style.setProperty('left', `${ev.clientX-50}px`) 
@@ -50,7 +56,7 @@ function checkHitCaterpie() {
 
 function drawThunder(x, y) {
   let img = document.createElement('img')
-  img.src = 'https://pngimg.com/uploads/thunder/thunder_PNG64.png'
+  img.src = thunderImg
   img.width = zapdos.width
   img.style.setProperty('z-index', -1)
   img.style.setProperty('position', 'absolute')
@@ -74,11 +80,11 @@ function eraseThunder(img) {
 function updateCaterpies() {
   nCaterpies.innerText = caterpies.length
 }
+ 
 
 function randomCaterpie() {
   let img = document.createElement('img')
-  img.src = './public/img/caterpie.png'
-  img.width = 50
+  img.src = caterpieImg
   img.style.setProperty('position', 'absolute')
   let x = Math.floor(Math.random() * window.innerWidth) - (img.width * 2)
   let y  = Math.floor(Math.random() * window.innerHeight) - (img.height * 2)
