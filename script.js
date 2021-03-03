@@ -96,7 +96,7 @@ function start() {
   pScore.innerText = score
   nCaterpies.innerText = caterpies.length
   
-  let interval = setInterval(randomCaterpie, 1500)
+  let interval = setInterval(randomCaterpie, 800)
 }
 
 start()
