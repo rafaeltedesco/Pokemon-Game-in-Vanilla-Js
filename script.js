@@ -87,7 +87,7 @@ function randomCaterpie() {
   if (x < 0) x = 0
   if ((x + img.width) > window.innerWidth) x = window.innerWidth - (img.width * 2)
   if (y < 0) y = 0
-  if (y + img.width * 2 > window.innerHeight) y = window.height - (img.width * 2)
+  if (y + img.width * 2 > window.innerHeight) y = window.height/2
 
   img.style.setProperty('left', `${x}px`)
   img.style.setProperty('top', `${y}px`)
