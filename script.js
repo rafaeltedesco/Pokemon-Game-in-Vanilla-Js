@@ -12,7 +12,7 @@ function mouse(ev) {
   zapdos.style.setProperty('cursor', 'none')
 }
 
-document.body.addEventListener('dblclick', attack)
+document.body.addEventListener('click', attack)
 
 function updateScore() {
   pScore.innerText = score
