@@ -23,4 +23,8 @@ body {
 
 p {
   margin-left: 10px;
+ -webkit-box-shadow: 4px 5px 15px 5px rgba(0,0,0,0.42); 
+box-shadow: 4px 5px 15px 5px rgba(0,0,0,0.42);
+  padding: 10px;
+  color: #fff;
 }

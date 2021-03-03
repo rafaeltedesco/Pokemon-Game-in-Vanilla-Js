@@ -7,6 +7,7 @@ let thunders = []
 let caterpies = []
 
 function mouse(ev) {
+  zapdos.style.setProperty('z-index', 3)
   zapdos.style.setProperty('left', `${ev.clientX-50}px`) 
   zapdos.style.setProperty('top', `${ev.clientY-25}px`)
   zapdos.style.setProperty('cursor', 'none')
@@ -84,7 +85,7 @@ function randomCaterpie() {
   let y  = Math.floor(Math.random() * window.innerHeight) - (img.height * 2)
   img.style.setProperty('left', `${x}px`)
   img.style.setProperty('top', `${y}px`)
-  img.style.setProperty('z-index', -2)
+  img.style.setProperty('z-index', 1)
   caterpies.push(img)
   updateCaterpies()
   img.setAttribute('id', caterpies.length)
