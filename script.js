@@ -81,8 +81,14 @@ function randomCaterpie() {
   img.src = 'http://static.pokemonpets.com/images/monsters-images-800-800/2010-Shiny-Caterpie.png'
   img.width = 50
   img.style.setProperty('position', 'absolute')
-  let x = Math.floor(Math.random() * window.innerWidth) - (img.width * 3)
-  let y  = Math.floor(Math.random() * window.innerHeight) - (img.height * 3)
+  let x = Math.floor(Math.random() * window.innerWidth) 
+  let y = Math.floor(Math.random() * window.innerHeight)
+
+  if (x < 0) x = 0
+  if (x + img.width > window.innerWidth) x = window.innerWidth - img.width
+  if (y < 0) y = 0
+  if (y + img.height > window.innerHeight) y = window.innerHeight - img.height
+
   img.style.setProperty('left', `${x}px`)
   img.style.setProperty('top', `${y}px`)
   img.style.setProperty('z-index', 1)
