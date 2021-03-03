@@ -14,11 +14,11 @@ body {
   font-size: 2rem;
   font-family: Helvetica;
   background-image: url('./public/img/pk_bg.png');
-  background-size: cover;
+  background-size:cover;
   background-repeat: no-repeat;
   min-height: 100vh;
-  min-width: 100vw;
-  overflow: hidden;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 p {
